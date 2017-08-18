@@ -1,0 +1,23 @@
+input:"data1"
+input_shape{
+   dim:1
+   dim:512
+   dim:38
+   dim:38
+}
+
+input:"data2"
+input_shape{
+    dim:1
+    dim:512
+    dim:38
+    dim:38
+}
+
+layer{
+name:"loss"
+type:"SmoothL1Loss"
+bottom:"data1"
+bottom:"data2"
+top:"loss"
+}

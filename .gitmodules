@@ -49,3 +49,6 @@
 [submodule "third_party/NNPACK_deps/psimd"]
 	path = third_party/NNPACK_deps/psimd
 	url = https://github.com/Maratyszcza/psimd.git
+[submodule "caffe2/third_party"]
+	path = caffe2/third_party
+	url = https://github.com/ConeyFly/caffe2.git

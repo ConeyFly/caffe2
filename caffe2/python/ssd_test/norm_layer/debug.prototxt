@@ -1,0 +1,27 @@
+#force_backward: true
+input:"conv4_3"
+input_shape{
+   dim:1
+   dim:512
+   dim:38
+   dim:38
+}
+
+layer{
+name:"conv4_3_norm"
+type:"Normalize"
+bottom:"conv4_3"
+top:"conv4_3_norm"
+#propagate_down: 1
+norm_param{
+   across_spatial:false
+   scale_filler{
+	type:"constant"
+	value:20.0
+   }
+   channel_shared:false
+}
+}
+
+
+
